@@ -1040,8 +1040,51 @@ body.single .mec-wrap{padding-bottom:2rem;}
 	margin:0;
 }
 
+/*Add underline to text links*/
+.betterdocs-entry-content p a,
+.betterdocs-entry-content li a{text-decoration: underline;}
+
+/*Override non-customizable page background color*/
+.post-type-archive-docs .betterdocs-wraper,
+.betterdocs-category-wraper,
+.betterdocs-single-wraper,
+.betterdocs-archive-wrap .betterdocs-categories-wrap .docs-item-container,
+.betterdocs-category-list .betterdocs-categories-wrap .docs-single-cat-wrap,
+.betterdocs-category-box.white-bg .docs-single-cat-wrap,
+.betterdocs-categories-wrap.white-bg .docs-single-cat-wrap{
+	background:#FFF;
+}
+/*Remove dropshadow from Docs page columns*/
+.betterdocs-category-list .betterdocs-categories-wrap .docs-single-cat-wrap{
+	box-shadow:none;
+}
+/*Hide Page Title*/
+.post-type-archive-docs header.page-header,
+.tax-doc_category header.page-header,
+.tax-doc_tag header.page-header,
+.docs-template-default header.page-header{display: none;}
+
+/*Decrease left padding for Category Headings*/
+.docs-cat-title-inner a h3{
+	padding-left:15px;
+}
+/*Reduce Category Count Size*/
+.betterdocs-wraper .docs-cat-title-inner span,
+.betterdocs-category-wraper .docs-cat-title-inner span,
+.betterdocs-single-wraper .docs-cat-title-inner span,
+.elementor-widget-eael-betterdocs-category-grid .docs-cat-title-inner span {
+	width:18px;
+	height: 18px;
+}
+/*Reduce listing line-height on Docs page*/
+.betterdocs-archive-wrap .betterdocs-categories-wrap li a{
+	font-size:16px;
+	line-height: 1.1em;
+	display:list-item;
+}
+
 /*Table of Contents Styling*/
-.betterdocs-entry-content div.betterdocs-toc{
+/*.betterdocs-entry-content div.betterdocs-toc{
 	width:90%;
 }
  .betterdocs-content-area .betterdocs-toc > .toc-list a {
@@ -1076,26 +1119,7 @@ body.single .mec-wrap{padding-bottom:2rem;}
 }
 
 
-.post-type-archive-docs header.page-header,
-.tax-doc_category header.page-header,
-.tax-doc_tag header.page-header,
-.docs-template-default header.page-header{display: none;}
 
-.betterdocs-entry-content p a{text-decoration: underline;}
-
-
-.post-type-archive-docs .betterdocs-wraper,
-.betterdocs-category-wraper,
-.betterdocs-single-wraper,
-.betterdocs-archive-wrap .betterdocs-categories-wrap .docs-item-container,
-.betterdocs-category-list .betterdocs-categories-wrap .docs-single-cat-wrap,
-.betterdocs-category-box.white-bg .docs-single-cat-wrap,
-.betterdocs-categories-wrap.white-bg .docs-single-cat-wrap{
-	background:#FFF;
-}
-.betterdocs-category-list .betterdocs-categories-wrap .docs-single-cat-wrap{
-	box-shadow:none;
-}
 .betterdocs-sidebar-content .betterdocs-categories-wrap .docs-item-container li{
 	overflow: hidden;
 }
@@ -1127,10 +1151,7 @@ body.single .mec-wrap{padding-bottom:2rem;}
 .betterdocs-single-wraper .betterdocs-sidebar-content .docs-item-count,
 .elementor-widget-eael-betterdocs-category-grid .docs-item-count{background-color:#B1040E;}
 
-.betterdocs-wraper .docs-cat-title-inner span,
-.betterdocs-category-wraper .docs-cat-title-inner span,
-.betterdocs-single-wraper .docs-cat-title-inner span,
-.elementor-widget-eael-betterdocs-category-grid .docs-cat-title-inner span {background-color:transparent;}
+
 
 .betterdocs-wraper .docs-cat-title-inner h3,
 .betterdocs-category-wraper .betterdocs-sidebar-content .docs-cat-title-inner h3,
@@ -1226,7 +1247,7 @@ body.single .mec-wrap{padding-bottom:2rem;}
 
 #betterdocs-single-main .betterdocs-tags a{color: #B1040E;}
 #betterdocs-single-main .betterdocs-tags a:hover{color:#2e2d29;}
-
+*/
 /*==================================================
 ====================================================
 
