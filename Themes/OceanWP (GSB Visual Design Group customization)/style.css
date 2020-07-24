@@ -5,7 +5,7 @@ Description: A customized Wordpress child theme based on OceanWP.
 Author: Cristina Strombotne
 Author URI: https://www.linkedin.com/in/cstrombotne/
 Template: oceanwp
-Version: 2020.07.23
+Version: 2020.07.24
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
@@ -180,8 +180,8 @@ body .theme-button, body input[type="submit"], body button[type="submit"], body 
 body .elementor-menu-anchor:before {
   content: "";
   display:block;
-  height: 60px; /* fixed header height*/
-  margin: -60px 0 0; /* negative fixed header height */
+  height: 80px; /* fixed header height*/
+  margin: -80px 0 0; /* negative fixed header height */
   visibility: hidden;
   pointer-events: none;
 }
@@ -965,6 +965,12 @@ header#site-header .dept{
     -ms-flex-positive: 1;
     flex-grow: 1;
     vertical-align: bottom;
+}
+
+ul.elementor-nav-menu--dropdown.sub-menu a,
+ul.elementor-nav-menu--dropdown.sub-menu a:focus,
+ul.elementor-nav-menu--dropdown.sub-menu a:hover{
+	border:none;
 }
 
 /*==================================================
