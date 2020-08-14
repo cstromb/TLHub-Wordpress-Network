@@ -1012,6 +1012,9 @@ body.single .mec-wrap{padding-bottom:2rem;}
 	font-size: 1rem;
 	line-height: 1.5em;
 }
+.mec-wrap .dark-mode p{
+	color:#D5D5D4;
+}
 .mec-load-more-button, .mec-events-meta-group-tags a, .mec-events-button, .mec-single-event .mec-event-meta dt, .mec-wrap abbr, .mec-event-schedule-content dl dt, .mec-breadcrumbs a, .mec-breadcrumbs span .mec-event-content p, .mec-wrap p{
 	font-weight:400;
 }
